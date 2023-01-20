@@ -1,0 +1,9 @@
+  #VRML_SIM R2023b utf8
+  PROTO FourWheelsRobot [
+
+  ]
+  {
+    Robot {
+      # list of fields
+    }
+  }
