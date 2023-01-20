@@ -1,0 +1,155 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/570f2f3b725a690d761345ce553dd1fd6d9a777d/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/570f2f3b725a690d761345ce553dd1fd6d9a777d/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/570f2f3b725a690d761345ce553dd1fd6d9a777d/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/570f2f3b725a690d761345ce553dd1fd6d9a777d/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/570f2f3b725a690d761345ce553dd1fd6d9a777d/projects/objects/floors/protos/Floor.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.4084249087259518 -0.06812539800551298 0.9102461337895307 3.3328502252393437
+  position 1.2413083865566459 0.3182378475742458 1.7307736194815375
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 1 1
+}
+E-puck {
+  hidden linearVelocity_0 0.012468750088333019 2.8346094886683282e-08 -7.762650644356076e-08
+  hidden angularVelocity_0 1.3281190300297177e-08 -0.006083393781827659 1.342383336101073e-09
+  hidden translation_1 0 0.026000000000000006 0.02
+  hidden rotation_1 0 -1 0 5.794018568319191
+  hidden linearVelocity_1 0.01243833267281213 2.827923371777969e-08 -4.066218290965344e-08
+  hidden angularVelocity_1 -1.4069940759570568e-06 0.6219166062393101 2.1768338581478085e-08
+  hidden translation_2 0 -0.025999999999999992 0.02
+  hidden rotation_2 0 -1 0 5.794018568216825
+  hidden linearVelocity_2 0.012438332584996046 2.808018112601456e-08 -4.063686414036426e-08
+  hidden angularVelocity_2 -1.410976559467591e-06 0.6219166062357911 -1.64359234909255e-08
+  translation 0.22043941020369912 1.872943387425737e-07 -6.394283101077321e-05
+  rotation 5.959130295660006e-07 0.9999982681738345 0.001861088116296682 0.0012169663796312274
+  controller "e-puck_go_forward"
+}
+WoodenBox {
+  translation -0.334764 0.384764 0.07
+  rotation 0.577349935856137 -0.5773509358560258 0.577349935856137 2.0944
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.315236 0.344764 0.0700003
+  rotation 0.577349935856137 -0.5773509358560258 0.577349935856137 2.0944
+  name "wooden box(2)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.315236 -0.335236 0.0699975
+  rotation 0.577349935856137 -0.5773509358560258 0.577349935856137 2.0944
+  name "wooden box(3)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.324764 -0.365236 0.0699975
+  rotation 0.577349935856137 -0.5773509358560258 0.577349935856137 2.0944
+  name "wooden box(4)"
+  size 0.1 0.1 0.1
+}
+Solid {
+  translation -0.49 0.01 0.12
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.05 1 0.2
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject Box {
+    size 0.05 1 0.2
+  }
+}
+Solid {
+  translation 0.48 0.01 0.12
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.05 1 0.2
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject Box {
+    size 0.05 1 0.2
+  }
+}
+Solid {
+  translation -0.0100001 0.48 0.12
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.05 1 0.2
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject Box {
+    size 0.05 1 0.2
+  }
+}
+Solid {
+  translation -0.0100001 -0.47 0.12
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.05 1 0.2
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject Box {
+    size 0.05 1 0.2
+  }
+}
+Shape {
+  appearance PBRAppearance {
+  }
+}
+Solid {
+  translation 0.08109207791050217 -9.824225318719118e-07 0.09342524753123901
+  rotation 6.422480390770816e-06 -0.9999999998135555 -1.8211000595661082e-05 0.2527887781538165
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../../../Desktop/BRICK.jpg"
+          ]
+        }
+      }
+      geometry Sphere {
+        radius 0.05
+        subdivision 2
+      }
+    }
+  ]
+  boundingObject Sphere {
+    radius 0.1
+  }
+  physics Physics {
+  }
+  translationStep 0.2
+}

@@ -1,0 +1,154 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/570f2f3b725a690d761345ce553dd1fd6d9a777d/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/570f2f3b725a690d761345ce553dd1fd6d9a777d/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/570f2f3b725a690d761345ce553dd1fd6d9a777d/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/570f2f3b725a690d761345ce553dd1fd6d9a777d/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/570f2f3b725a690d761345ce553dd1fd6d9a777d/projects/objects/floors/protos/Floor.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.22006849813711257 0.0018931991586781719 0.9754825841216342 2.917521271501447
+  position 1.5226360595473318 -0.3870691062784271 0.8285199343292668
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 1 1
+}
+E-puck {
+  hidden position_0_0 0.3617279996208005
+  hidden position_0_1 0.3617279996096783
+  hidden linearVelocity_0 0.012376145786954616 2.8542555847151916e-08 -1.6404415598950954e-06
+  hidden angularVelocity_0 3.0899049802467463e-08 -0.0122575103731653 9.127878562386397e-09
+  hidden rotation_1 0 -1 0 6.175842568317836
+  hidden linearVelocity_1 0.012314849789830669 2.8117040678024555e-08 -1.8023018792057115e-06
+  hidden angularVelocity_1 -1.3851549156655463e-06 0.6157424896250444 2.7442423415255548e-08
+  hidden rotation_2 0 -0.9999999999999999 0 6.175842568213423
+  hidden linearVelocity_2 0.012314849688919834 2.752813496541793e-08 -1.802463429267942e-06
+  hidden angularVelocity_2 -1.3971041990759475e-06 0.6157424896209841 -6.559108438333772e-09
+  translation 0.21280292907270368 1.6995254878952845e-07 -6.37483938350468e-05
+  rotation 4.841046423865788e-06 -0.9999912363073004 0.004186560063001846 0.0005409583409911408
+  controller "e-puck_go_forward"
+}
+WoodenBox {
+  translation -0.334764 0.384764 0.07
+  rotation 0.577349935856137 -0.5773509358560258 0.577349935856137 2.0944
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.315236 0.344764 0.0700003
+  rotation 0.577349935856137 -0.5773509358560258 0.577349935856137 2.0944
+  name "wooden box(2)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.315236 -0.335236 0.0699975
+  rotation 0.577349935856137 -0.5773509358560258 0.577349935856137 2.0944
+  name "wooden box(3)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.324764 -0.365236 0.0699975
+  rotation 0.577349935856137 -0.5773509358560258 0.577349935856137 2.0944
+  name "wooden box(4)"
+  size 0.1 0.1 0.1
+}
+Solid {
+  translation -0.49 0.01 0.12
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.05 1 0.2
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject Box {
+    size 0.05 1 0.2
+  }
+}
+Solid {
+  translation 0.48 0.01 0.12
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.05 1 0.2
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject Box {
+    size 0.05 1 0.2
+  }
+}
+Solid {
+  translation -0.0100001 0.48 0.12
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.05 1 0.2
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject Box {
+    size 0.05 1 0.2
+  }
+}
+Solid {
+  translation -0.0100001 -0.47 0.12
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.05 1 0.2
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject Box {
+    size 0.05 1 0.2
+  }
+}
+Shape {
+  appearance PBRAppearance {
+  }
+}
+Solid {
+  translation 0.08105971646344326 -9.820625938154505e-07 0.09342471619146628
+  rotation 6.421675712655401e-06 -0.99999999981668 -1.8038908406168486e-05 0.253112392623632
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.05
+        subdivision 2
+      }
+    }
+  ]
+  boundingObject Sphere {
+    radius 0.1
+  }
+  physics Physics {
+  }
+  translationStep 0.2
+  linearVelocity 7.779194004545625e-05 -8.652357126443758e-10 4.559714588627586e-06
+  angularVelocity 8.652357126443756e-09 0.0007779194004545623 -8.936775633051425e-08
+}

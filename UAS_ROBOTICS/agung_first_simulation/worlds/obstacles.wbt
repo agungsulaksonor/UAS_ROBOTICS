@@ -1,0 +1,108 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/570f2f3b725a690d761345ce553dd1fd6d9a777d/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/570f2f3b725a690d761345ce553dd1fd6d9a777d/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/570f2f3b725a690d761345ce553dd1fd6d9a777d/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/570f2f3b725a690d761345ce553dd1fd6d9a777d/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/570f2f3b725a690d761345ce553dd1fd6d9a777d/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/570f2f3b725a690d761345ce553dd1fd6d9a777d/projects/objects/apartment_structure/protos/Wall.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.1430038254414326 0.820460309031641 -0.553529391462477 0.7987376711500783
+  position -2.7069676259659894 0.7834956353409006 2.0209665814493385
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 1 1
+}
+E-puck {
+  hidden position_0_0 6.028800046420535
+  hidden position_0_1 6.028800046536071
+  hidden linearVelocity_0 0.04137047292390315 2.152634325919545e-08 0.000252885436752393
+  hidden angularVelocity_0 3.702004580198021e-07 -0.174561006737553 2.6583437092442022e-06
+  hidden translation_1 0 0.026 0.02
+  hidden rotation_1 0 1 0 6.028800046420535
+  hidden linearVelocity_1 0.04048739141262682 2.065881092164346e-08 0.00016546022430185875
+  hidden angularVelocity_1 -1.0716459463921357e-06 0.45343915062022044 2.7750011871313882e-06
+  hidden translation_2 0 -0.026 0.02
+  hidden rotation_2 0 1 0 6.028800046536071
+  hidden linearVelocity_2 0.04048752952791626 1.886268076887888e-08 0.00016546024303031834
+  hidden angularVelocity_2 -9.011956010364643e-07 0.4534391506207782 2.528595242272681e-06
+  translation 0.2055684894975136 1.5398255232963491e-07 -4.328114145424507e-05
+  rotation -1.4502219953620292e-06 0.999999997413073 7.19148882202257e-05 0.03159014991239039
+  controller "e-puck_go_forward"
+}
+WoodenBox {
+  translation -0.334764 0.384764 0.07
+  rotation 0.577349935856137 -0.5773509358560258 0.577349935856137 2.0944
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.315236 0.344764 0.0700003
+  rotation 0.577349935856137 -0.5773509358560258 0.577349935856137 2.0944
+  name "wooden box(2)"
+  size 0.1 0.1 0.1
+}
+Wall {
+  translation 0 0.47 0
+  size 1 0.1 0.1
+}
+Wall {
+  translation 0 -0.49 0
+  name "wall(1)"
+  size 1 0.1 0.1
+}
+Wall {
+  translation -0.45 -0.02 0
+  rotation 0 0 1 1.5708
+  name "wall(2)"
+  size 1 0.1 0.1
+}
+Wall {
+  translation 0.44 -0.0199986 0
+  rotation 0 0 1 1.5708
+  name "wall(3)"
+  size 1 0.1 0.1
+}
+WoodenBox {
+  translation 0.315236 -0.335236 0.0699975
+  rotation 0.577349935856137 -0.5773509358560258 0.577349935856137 2.0944
+  name "wooden box(3)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.324764 -0.365236 0.0699975
+  rotation 0.577349935856137 -0.5773509358560258 0.577349935856137 2.0944
+  name "wooden box(4)"
+  size 0.1 0.1 0.1
+}
+Solid {
+  translation 0.08101491030601501 -9.815641705104027e-07 0.09339147599003443
+  rotation 6.420568763355084e-06 -0.9999999998209442 -1.7801345179598783e-05 0.2535605241981835
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.05
+        subdivision 2
+      }
+    }
+  ]
+  boundingObject Sphere {
+    radius 0.1
+  }
+  physics Physics {
+  }
+  translationStep 0.2
+  linearVelocity 0.038861595235239646 -7.789328330129802e-07 0.0012899037570879277
+  angularVelocity 7.788994468609734e-06 0.3886586480611379 2.468431609457878e-06
+}

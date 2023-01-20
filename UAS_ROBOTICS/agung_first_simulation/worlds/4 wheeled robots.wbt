@@ -1,0 +1,219 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/570f2f3b725a690d761345ce553dd1fd6d9a777d/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/570f2f3b725a690d761345ce553dd1fd6d9a777d/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/570f2f3b725a690d761345ce553dd1fd6d9a777d/projects/objects/floors/protos/Floor.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.2535974104605225 -0.02801049033108761 0.9669042175102606 3.2998754201799363
+  position 1.1200148549502693 0.32649214633478774 0.8728398861788536
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 1 1
+}
+Solid {
+  translation -0.49 0.01 0.12
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.05 1 0.2
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject Box {
+    size 0.05 1 0.2
+  }
+}
+Solid {
+  translation 0.48 0.01 0.12
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.05 1 0.2
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject Box {
+    size 0.05 1 0.2
+  }
+}
+Solid {
+  translation -0.0100001 0.78 0.12
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.05 1 0.2
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject Box {
+    size 0.05 1 0.2
+  }
+}
+Solid {
+  translation -0.0100001 -0.47 0.12
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.05 1 0.2
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject Box {
+    size 0.05 1 0.2
+  }
+}
+Robot {
+  translation -3.2394369589923866e-06 0.21002799801219366 0.039805791186520785
+  rotation 0.9981816849865922 -0.005876098578292651 0.059989959350089106 0.00018367677121640714
+  children [
+    DEF Body Shape {
+      appearance PBRAppearance {
+        roughness 1
+      }
+      geometry Box {
+        size 0.1 0.19 0.03
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position -3.0660650221595913e-07
+      }
+      device [
+        RotationalMotor {
+        }
+      ]
+      endPoint Solid {
+        translation 0.05999999999999996 -0.04999999999999762 1.5330325110797706e-08
+        rotation 2.500286592563871e-06 -0.9999999999937484 -2.5002867488753724e-06 1.570795307178796
+        children [
+          DEF wheel Shape {
+            appearance PBRAppearance {
+            }
+            geometry Cylinder {
+              height 0.02
+              radius 0.04
+            }
+          }
+        ]
+        boundingObject USE wheel
+        physics DEF Physics_wheel Physics {
+        }
+        linearVelocity 1.4653308981972422e-09 -2.001886990250828e-08 -3.018876049066308e-07
+        angularVelocity 6.951390635392898e-07 -1.5694447822626484e-09 -9.751507589051617e-10
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position -2.447760660827766e-07
+      }
+      device [
+        RotationalMotor {
+        }
+      ]
+      endPoint Solid {
+        translation 0.06000000000000001 0.060000000000141114 5.691054360350161e-07
+        rotation 2.5312018421519345e-06 -0.9999999999935928 -2.5312019669415726e-06 1.5707953071789513
+        children [
+          DEF wheel Shape {
+            appearance PBRAppearance {
+            }
+            geometry Cylinder {
+              height 0.02
+              radius 0.04
+            }
+          }
+        ]
+        name "solid(3)"
+        boundingObject USE wheel
+        physics DEF Physics_wheel Physics {
+        }
+        linearVelocity 1.2120936816572507e-09 1.5415203326612385e-08 -3.050886475904463e-07
+        angularVelocity -5.800443839035937e-07 -1.3851581498509516e-09 9.882861286286576e-10
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position -3.0681917267435433e-07
+      }
+      device [
+        RotationalMotor {
+        }
+      ]
+      endPoint Solid {
+        translation -0.059999999999999984 -0.04999999999996009 1.376949586337117e-07
+        rotation 2.5001802572262536e-06 -0.9999999999937491 -2.500180413646177e-06 1.5707953071787952
+        children [
+          DEF wheel Shape {
+            appearance PBRAppearance {
+            }
+            geometry Cylinder {
+              height 0.02
+              radius 0.04
+            }
+          }
+        ]
+        name "solid(1)"
+        boundingObject USE wheel
+        physics DEF Physics_wheel Physics {
+        }
+        linearVelocity -1.4952839296780048e-09 -2.002051427134957e-08 -3.0193494880600045e-07
+        angularVelocity 6.951872488242082e-07 8.166027930255604e-10 9.904536291451827e-10
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 4.403393230138176e-09
+      }
+      device [
+        RotationalMotor {
+        }
+      ]
+      endPoint Solid {
+        translation -0.06 0.05999999999999689 7.064102035938083e-07
+        rotation 2.655791698841252e-06 -0.9999999999929466 -2.655791696596352e-06 1.570795307179598
+        children [
+          DEF wheel Shape {
+            appearance PBRAppearance {
+            }
+            geometry Cylinder {
+              height 0.02
+              radius 0.04
+            }
+          }
+        ]
+        name "solid(2)"
+        boundingObject USE wheel
+        physics DEF Physics_wheel Physics {
+        }
+        linearVelocity -1.243499556367646e-09 1.541423883041641e-08 -3.0513402944098964e-07
+        angularVelocity -5.800125028466384e-07 6.039930553212057e-10 -9.757805822529379e-10
+      }
+    }
+  ]
+  boundingObject USE Body
+  physics Physics {
+  }
+  linearVelocity -1.5342087048885962e-11 -2.308723205846099e-09 -2.8608779242053383e-07
+  angularVelocity -1.2305072470426164e-07 -3.8546094140100695e-10 6.75697061396125e-12
+}
